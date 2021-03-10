@@ -89,6 +89,7 @@ select  {
   background-color: #042037;
   border-radius: 25px;
   text-align: center;
+  font-weight: bold;
 }
 
 textarea {
