@@ -15,6 +15,7 @@ function init(){
     var phoneIn = document.getElementById("phoneSection")
     if (phoneCheck.checked == true){
       phoneIn.style.display = "block";
+      document.getElementById("phoneNum").required = true;
     } else {
       phoneIn.style.display = "none";
     }
