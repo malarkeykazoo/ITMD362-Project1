@@ -40,7 +40,7 @@
             </div>
             <div id="typeSelection">
               <div class=inputBox>
-                <select id="contactType" name="contactType">
+                <select id="contactType" name="contactType" required>
                   <option disabled selected value="">Please select</option>
                   <option value="business">Business</option>
                   <option value="personal">Personal</option>
@@ -54,7 +54,7 @@
                   <label for="cName">Company Name:</label>
                 </div>
                 <div class="inputBox">
-                  <input type="text" id="cName" name="cName" placeholder="Company Name" required>
+                  <input type="text" id="cName" name="cName" placeholder="Company Name">
                 </div>
               </div>
             </div>
@@ -97,7 +97,7 @@
                 <label for="details">Please enter request details:</label>
               </div>
               <div class=inputBox>
-                <textarea name="details" rows="10" cols="50" placeholder="Request Deails"></textarea>
+                <textarea id="details" name="details" rows="10" cols="50" placeholder="Request Details"></textarea>
               </div>
             </div>
             <div class=flexContain>  
@@ -110,7 +110,7 @@
             </div>
           </div>  
         <div id="submitContain">
-          <input type="submit" id='submit' value="Request Info">
+          <input type="submit" value="Request Info">
         </div>
       </form>
       <div id="thanksPage">
