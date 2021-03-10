@@ -29,11 +29,20 @@
             <div class="inputBox">
               <input type="text" id="lName" name="lName" placeholder="Last Name" required>
             </div>
-            <div class="labelBox">
-              <label for="cName">Company Name:</label>
+            <div id="typeSelection">
+              <select id="contactType" name="contactType">
+                <option disabled selected value="">Please select</option>
+                <option value="business">Business</option>
+                <option value="personal">Personal</option>
+              </select>
             </div>
-            <div class="inputBox">
-              <input type="text" id="cName" name="cName" placeholder="Company Name" required>
+            <div id="businessName">
+              <div class="labelBox">
+                <label for="cName">Company Name:</label>
+              </div>
+              <div class="inputBox">
+                <input type="text" id="cName" name="cName" placeholder="Company Name" required>
+              </div>
             </div>
             <div class="labelBox">
               <label for="email">Email Address:</label>
@@ -77,7 +86,7 @@
             </div>
           </div>  
         <div id="submitContain">
-          <input type="submit" value="Request Info">
+          <input type="submit" value="Submit">
         </div>
       </form>
     </div>

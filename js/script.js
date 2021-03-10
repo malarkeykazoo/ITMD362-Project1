@@ -1,5 +1,6 @@
 function init(){
   window.addEventListener('load', init);
+  document.getElementById("typeSelection").addEventListener("change", showBus); 
   document.getElementById("phoneContact").addEventListener("click", showPhone); 
   document.getElementById("specialReq").addEventListener("click", showSpec);
   document.getElementById("acceptTC").addEventListener("click", showSubmit);
@@ -10,6 +11,19 @@ function init(){
       phoneIn.style.display = "block";
     } else {
       phoneIn.style.display = "none";
+    }
+  }
+  function showBus(){
+    var busCheck = document.getElementById("contactType").value;
+    var busIn = document.getElementById("businessName")
+    if (busCheck == "business"){
+      busIn.style.display = "block";
+    } 
+    if (busCheck == "personal") {
+      busIn.style.display = "none";
+    }
+    if (busCheck == " ") {
+      busIn.style.display = "none";
     }
   }
   function showSpec(){

@@ -41,6 +41,9 @@ strong  {
   color: #021b10;
   max-width: 85vw;
 }
+#businessName {
+  display:none;
+}
 #phoneSection {
   display:none;
 }
