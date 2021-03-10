@@ -156,3 +156,27 @@ input[type=checkbox] {
     font-size: 1.618em;
   }
 }
+@media only screen and (min-device-width: 950px) {
+  #formIntro  {
+    font-size: 1.618em;
+    line-height: 1.2em;
+  }
+  .labelBox{
+    max-width: 70%;
+    padding-top: 2% ;
+    order: 1;
+    line-height: 1.2em;
+    font-size: 1.618em;
+  }
+  .inputBox{
+    order: 2;
+    line-height: 1.2em;
+    font-size: 1.618em;
+    padding-left: 20px;
+  }
+  #submitContain {
+    padding-top: 15px;
+    line-height: 1.2em;
+    font-size: 1.618em;
+  }
+}
