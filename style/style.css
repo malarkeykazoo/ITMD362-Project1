@@ -1,24 +1,25 @@
 /* Color Palette from Palletton - https://paletton.com/#uid=53y0v0kvQaHuT0FtG4+tSmXDgOu*/
+/* Golden Section Modular Scale: https://www.modularscale.com/?1&em&1.618 */
 * {
   box-sizing: border-box;
 }
 html{
-  line-height: 1.2em;
+  line-height: 1.618em;
   font-family: 'Rubik', sans-serif;
+  line-height: 1.6em
 }
 h1{
-  line-height: 1.6em;
-  padding: 1% 0;
+  padding: 2% 0;
   font-weight: 800;
   font-family: 'Open Sans', sans-serif;
-  font-size: 2.0581em;
+  font-size: 4.236em;
   color:#042037;
 }
 h2{
-  padding: 1% 0;
+  padding: 2% 0;
   font-weight: 800;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.618em;
+  font-size: 2.618em;
   color:#0f4776;
 }
 body{
@@ -30,9 +31,40 @@ body{
 #bodyContain  {
   width:80vw;
   text-align: center;
+  margin: 0 auto;
 }
 #formIntro  {
   margin: 1% 0;
   color: #021b10;
   max-width: 85vw;
+}
+.labelBox > label {
+  color: #042037;
+  line-height: 1.6em;
+  font-weight: bold;
+}
+.inputBox {
+
+}
+.inputBox > input {
+  padding: 5px;
+  color: #718ea4;
+  background-color: #042037;
+  border-radius: 25px;
+  text-align: center;
+}
+
+textarea {
+  padding: 5px;
+  color: #718ea4;
+  background-color: #042037;
+  border-radius: 15px;
+}
+
+#submitContain > input  {
+  padding: 5px;
+  border-radius: 25px;
+  color:#718ea4;
+  font-weight: bold;
+  background-color: #042037;;
 }
