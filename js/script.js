@@ -10,7 +10,6 @@ function init(){
   document.getElementById("phoneContact").addEventListener("click", showPhone); 
   document.getElementById("specialReq").addEventListener("click", showSpec);
   document.getElementById("submit").addEventListener("click", showThanks);
-  //document.getElementById("acceptTC").addEventListener("click", showSubmit);
   function showPhone(){
     var phoneCheck = document.getElementById("phoneContact");
     var phoneIn = document.getElementById("phoneSection")
@@ -55,12 +54,3 @@ function init(){
     }
   }
 }
-  //function showSubmit(){
-   //var subCheck = document.getElementById("acceptTC");
-    //var subIn = document.getElementById("submitContain")
-    //if (subCheck.checked == true){
-      //subIn.style.display = "block";
-    //} else {
-      //subIn.style.display = "none";
-    //}
-  //}
