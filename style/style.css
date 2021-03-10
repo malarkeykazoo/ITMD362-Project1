@@ -41,6 +41,15 @@ strong  {
   color: #021b10;
   max-width: 85vw;
 }
+#phoneSection {
+  display:none;
+}
+#requestSection {
+  display:none;
+}
+#submitContain {
+  display:none;
+}
 .labelBox > label {
   color: #042037;
   line-height: 1.6em;

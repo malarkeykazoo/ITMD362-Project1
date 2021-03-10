@@ -47,11 +47,13 @@
             <div class="inputBox">
               <input type="checkbox" id="phoneContact" name="phoneContact">
             </div>
-            <div class="labelBox">
-              <label for="phone_field">Contact Phone Number:</label>
-            </div>
-            <div class="inputBox">
-              <input type="tel" id="phone_field" name="phone_field" placeholder="555-555-1234" pattern="1?[-]?[(]?\d{3}[),-]?\d{3}[-]?\d{4}">
+            <div id="phoneSection">
+              <div class="labelBox">
+                <label for="phone_field">Contact Phone Number:</label>
+              </div>
+              <div class="inputBox">
+                <input type="tel" id="phone_field" name="phone_field" placeholder="555-555-1234" pattern="1?[-]?[(]?\d{3}[),-]?\d{3}[-]?\d{4}">
+              </div>
             </div>
             <div class="labelBox">
               <label for="specialReq">Check here if you have a specific request that you would like information on:</label>
@@ -59,12 +61,14 @@
             <div class="inputBox">
               <input type="checkbox" id="specialReq" name="specialReq">
             </div>
-            <div class=labelBox>
-              <label for="details">Please enter request details:</label>
-            </div>
-            <div class=inputbox>
-              <textarea name="details" rows="10" cols="50" placeholder="Request Deails"></textarea>
-            </div>
+            <div id="requestSection">           
+              <div class=labelBox>
+                <label for="details">Please enter request details:</label>
+              </div>
+              <div class=inputbox>
+                <textarea name="details" rows="10" cols="50" placeholder="Request Deails"></textarea>
+              </div>
+            </div>  
             <div class="labelBox">
               <label for="acceptTC">By checking this box, you agree to be contacted via email or phone:</label>
             </div>
