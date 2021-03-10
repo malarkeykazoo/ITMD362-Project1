@@ -1,9 +1,15 @@
+// jQuery 3.x-style ready event and locally scoped $
+jQuery(function($) {
+  $('html').removeClass('nojs');
+  $('html').addClass('hasjs');
+});
+
 function init(){
   window.addEventListener('load', init);
   document.getElementById("typeSelection").addEventListener("change", showBus); 
   document.getElementById("phoneContact").addEventListener("click", showPhone); 
   document.getElementById("specialReq").addEventListener("click", showSpec);
-  document.getElementById("acceptTC").addEventListener("click", showSubmit);
+  //document.getElementById("acceptTC").addEventListener("click", showSubmit);
   function showPhone(){
     var phoneCheck = document.getElementById("phoneContact");
     var phoneIn = document.getElementById("phoneSection")
@@ -35,13 +41,13 @@ function init(){
       specIn.style.display = "none";
     }
   }
-  function showSubmit(){
-    var subCheck = document.getElementById("acceptTC");
-    var subIn = document.getElementById("submitContain")
-    if (subCheck.checked == true){
-      subIn.style.display = "block";
-    } else {
-      subIn.style.display = "none";
-    }
-  }
+  //function showSubmit(){
+   //var subCheck = document.getElementById("acceptTC");
+    //var subIn = document.getElementById("submitContain")
+    //if (subCheck.checked == true){
+      //subIn.style.display = "block";
+    //} else {
+      //subIn.style.display = "none";
+    //}
+  //}
 }

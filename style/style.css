@@ -3,11 +3,13 @@
 * {
   box-sizing: border-box;
 }
+
 html{
   line-height: 1.618em;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Rubik', 'Segoe UI', 'Helvetica Neue', sans-serif;
   padding: 1.618em
 }
+
 h1{
   line-height: 1.2em;
   padding: 2% 0;
@@ -16,6 +18,7 @@ h1{
   font-size: 2.618em;
   color:#042037;
 }
+
 h2{
   padding: 2% 0;
   font-weight: 800;
@@ -23,55 +26,60 @@ h2{
   font-size: 1.618em;
   color:#0f4776;
 }
+
 body{
   margin: 0 auto;
   width:95vw;
   height:95vh;
   background-color: #718ea4;
 }
+
 strong  {
   font-weight: bold;
 }
+
 #bodyContain  {
   width:80vw;
   text-align: center;
   margin: 0 auto;
 }
+
 #formIntro  {
   margin: 1% 0;
   color: #021b10;
   max-width: 85vw;
 }
-#businessName {
+
+.hasjs #businessName {
   display:none;
 }
-#phoneSection {
+
+.hasjs #phoneSection {
   display:none;
 }
-#requestSection {
+
+.hasjs #requestSection {
   display:none;
 }
-#submitContain {
-  display:none;
-}
-#typeSelection  {
-  padding: 2% 0;
-}
-select{
+
+select  {
   padding: 5px;
   color: #718ea4;
   background-color: #042037;
   border-radius: 25px;
   text-align: center;
 }
+
 #typeSelection > .labelBox  {
   padding-bottom: 1%;
 }
+
 .labelBox > label {
   color: #042037;
   line-height: 1.618em;
   font-weight: bold;
 }
+
 .inputBox > input {
   padding: 5px;
   color: #718ea4;
@@ -86,9 +94,11 @@ textarea {
   background-color: #042037;
   border-radius: 15px;
 }
+
 #submitContain  {
   padding-top: 10px;
 }
+
 #submitContain > input  {
   padding: 5px;
   border-radius: 25px;
@@ -96,15 +106,19 @@ textarea {
   font-weight: bold;
   background-color: #042037;;
 }
+
 .labelBox{
   padding-top: 1.5%;
 }
+
 .inputBox {
   padding-top: 1%;
 }
+
 input[type=checkbox] {
   transform: scale(2.5);
 }
+
 /*Tablets*/
 @media only screen and (min-device-width: 767px) {
   h1{
@@ -115,10 +129,12 @@ input[type=checkbox] {
     line-height: 1.2em;
     font-size: 2.618em;
   }
+
   #formIntro  {
     font-size: 1em;
     line-height: 1.2em;
   }
+
   .labelBox{
     max-width: 50%;
     padding-top: 2% ;
@@ -126,41 +142,49 @@ input[type=checkbox] {
     line-height: 1.2em;
     font-size: 1em;
   }
+
   .inputBox{
     order: 2;
     line-height: 1.2em;
     font-size: 1em;
     padding-left: 20px;
   }
+
   .flexContain {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: baseline;
   }
+
   .businessName {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
   }
+
   #typeSelection  {
     order: 2;
   }
+
   input[type=checkbox] {
       transform: scale(2);
   }
+
   #submitContain > input  {
     padding: 10px;
     line-height: 1.2em;
     font-size: 1.618em;
   }
 }
+
 @media only screen and (min-device-width: 950px) {
   #formIntro  {
     font-size: 1.618em;
     line-height: 1.2em;
   }
+
   .labelBox{
     max-width: 70%;
     padding-top: 2% ;
@@ -168,12 +192,14 @@ input[type=checkbox] {
     line-height: 1.2em;
     font-size: 1.618em;
   }
+
   .inputBox{
     order: 2;
     line-height: 1.2em;
     font-size: 1.618em;
     padding-left: 20px;
   }
+
   #submitContain {
     padding-top: 15px;
     line-height: 1.2em;
