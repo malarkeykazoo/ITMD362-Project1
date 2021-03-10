@@ -13,65 +13,83 @@
   <body onload="init()">
     <div id=bodyContain>
       <h1> IT Consulting Services</h1>
-      <h2>We work for you.</h2>
+      <h2>Peace of mind in an ever changing digital world.</h2>
       <p id=formIntro> Please complete the following form to sign up for our <strong>Emergency Security Alerts</strong> and request more info on your project.</p>
       <form id="signupForm" action="#null" method="post" autocomplete="on">
         <div id="formContain">
+          <div class=flexContain>
             <div class="labelBox">
               <label for="fName">First Name:</label>
             </div>
             <div class="inputBox">  
               <input type="text" id="fName" name="fName" placeholder="First Name" required>
             </div>
+          </div>
+          <div class=flexContain>
             <div class="labelBox">
               <label for="lName">Last Name:</label>
             </div>
             <div class="inputBox">
               <input type="text" id="lName" name="lName" placeholder="Last Name" required>
             </div>
-            <div id="typeSelection">
-              <div class="labelBox">
-                <label for="contactType">Contact Type (Business or Personal):</label>
-              </div>
-              <select id="contactType" name="contactType">
-                <option disabled selected value="">Please select</option>
-                <option value="business">Business</option>
-                <option value="personal">Personal</option>
-              </select>
+          </div>
+          <div class=flexContain>
+            <div class="labelBox">
+              <label for="contactType">Contact Type (Business or Personal):</label>
             </div>
+            <div id="typeSelection">
+              <div class=inputBox>
+                <select id="contactType" name="contactType">
+                  <option disabled selected value="">Please select</option>
+                  <option value="business">Business</option>
+                  <option value="personal">Personal</option>
+                </select>
+              </div>
+            </div>
+          </div>
             <div id="businessName">
+              <div class=flexContain>
+                <div class="labelBox">
+                  <label for="cName">Company Name:</label>
+                </div>
+                <div class="inputBox">
+                  <input type="text" id="cName" name="cName" placeholder="Company Name" required>
+                </div>
+              </div>
+            </div>
+            <div class=flexContain>
               <div class="labelBox">
-                <label for="cName">Company Name:</label>
+                <label for="email">Email Address:</label>
+              </div>
+              <div class="inputBox">  
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+              </div>
+            </div>
+            <div class=flexContain>
+              <div class="labelBox">
+                <label for="phoneContact">Check here if you would like a call back:</label>
               </div>
               <div class="inputBox">
-                <input type="text" id="cName" name="cName" placeholder="Company Name" required>
+                <input type="checkbox" id="phoneContact" name="phoneContact">
               </div>
-            </div>
-            <div class="labelBox">
-              <label for="email">Email Address:</label>
-            </div>
-            <div class="inputBox">  
-              <input type="email" id="email" name="email" placeholder="Email Address" required>
-            </div>
-            <div class="labelBox">
-              <label for="phoneContact">Check here if you would like a call back:</label>
-            </div>
-            <div class="inputBox">
-              <input type="checkbox" id="phoneContact" name="phoneContact">
             </div>
             <div id="phoneSection">
+              <div class=flexContain>
+                <div class="labelBox">
+                  <label for="phone_field">Contact Phone Number:</label>
+                </div>
+                <div class="inputBox">
+                  <input type="tel" id="phone_field" name="phone_field" placeholder="555-555-1234" pattern="1?[-]?[(]?\d{3}[),-]?\d{3}[-]?\d{4}">
+                </div>
+              </div>
+            </div>
+            <div class=flexContain>
               <div class="labelBox">
-                <label for="phone_field">Contact Phone Number:</label>
+                <label for="specialReq">Check here if you have a specific request that you would like information on:</label>
               </div>
               <div class="inputBox">
-                <input type="tel" id="phone_field" name="phone_field" placeholder="555-555-1234" pattern="1?[-]?[(]?\d{3}[),-]?\d{3}[-]?\d{4}">
+                <input type="checkbox" id="specialReq" name="specialReq">
               </div>
-            </div>
-            <div class="labelBox">
-              <label for="specialReq">Check here if you have a specific request that you would like information on:</label>
-            </div>
-            <div class="inputBox">
-              <input type="checkbox" id="specialReq" name="specialReq">
             </div>
             <div id="requestSection">           
               <div class=labelBox>
@@ -80,12 +98,14 @@
               <div class=inputbox>
                 <textarea name="details" rows="10" cols="50" placeholder="Request Deails"></textarea>
               </div>
-            </div>  
-            <div class="labelBox">
-              <label for="acceptTC">By checking this box, you agree to be contacted via email or phone:</label>
             </div>
-            <div class="inputBox">
-              <input type="checkbox" id="acceptTC" name="acceptTC" required>
+            <div class=flexContain>  
+              <div class="labelBox">
+                <label for="acceptTC">By checking this box, you agree to be contacted via email or phone:</label>
+              </div>
+              <div class="inputBox">
+                <input type="checkbox" id="acceptTC" name="acceptTC" required>
+              </div>
             </div>
           </div>  
         <div id="submitContain">

@@ -1,4 +1,4 @@
-/* Color Palette from Palletton - https://paletton.com/#uid=53y0v0kvQaHuT0FtG4+tSmXDgOu*/
+/* Color Palette from Palletton: https://paletton.com/#uid=53y0v0kvQaHuT0FtG4+tSmXDgOu*/
 /* Golden Section Modular Scale: https://www.modularscale.com/?1&em&1.618 */
 * {
   box-sizing: border-box;
@@ -9,6 +9,7 @@ html{
   padding: 1.618em
 }
 h1{
+  line-height: 1.2em;
   padding: 2% 0;
   font-weight: 800;
   font-family: 'Open Sans', sans-serif;
@@ -68,7 +69,7 @@ select{
 }
 .labelBox > label {
   color: #042037;
-  line-height: 1.6em;
+  line-height: 1.618em;
   font-weight: bold;
 }
 .inputBox > input {
@@ -85,7 +86,9 @@ textarea {
   background-color: #042037;
   border-radius: 15px;
 }
-
+#submitContain  {
+  padding-top: 10px;
+}
 #submitContain > input  {
   padding: 5px;
   border-radius: 25px;
@@ -98,4 +101,56 @@ textarea {
 }
 .inputBox {
   padding-top: 1%;
+}
+input[type=checkbox] {
+  transform: scale(2.5);
+}
+/*Tablets*/
+@media only screen and (min-device-width: 885px) {
+  h1{
+    font-size: 4.236em;
+  }
+
+  h2{
+    line-height: 1.2em;
+    font-size: 2.618em;
+  }
+  #formIntro  {
+    font-size: 1.618em;
+    line-height: 1.2em;
+  }
+  .labelBox{
+    padding: 2% ;
+    order: 1;
+    line-height: 1.2em;
+    font-size: 1.618em;
+  }
+  .inputBox{
+    order: 2;
+    line-height: 1.2em;
+    font-size: 1.618em;
+  }
+  .flexContain {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .businessName {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  #typeSelection  {
+    order: 2;
+  }
+  input[type=checkbox] {
+      transform: scale(2);
+  }
+  #submitContain > input  {
+    padding: 10px;
+    line-height: 1.2em;
+    font-size: 1.618em;
+  }
 }
