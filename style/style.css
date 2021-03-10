@@ -53,13 +53,23 @@ strong  {
 #submitContain {
   display:none;
 }
+#typeSelection  {
+  padding: 2% 0;
+}
+select{
+  padding: 5px;
+  color: #718ea4;
+  background-color: #042037;
+  border-radius: 25px;
+  text-align: center;
+}
+#typeSelection > .labelBox  {
+  padding-bottom: 1%;
+}
 .labelBox > label {
   color: #042037;
   line-height: 1.6em;
   font-weight: bold;
-}
-.inputBox {
-
 }
 .inputBox > input {
   padding: 5px;
@@ -82,4 +92,10 @@ textarea {
   color:#718ea4;
   font-weight: bold;
   background-color: #042037;;
+}
+.labelBox{
+  padding-top: 1.5%;
+}
+.inputBox {
+  padding-top: 1%;
 }
