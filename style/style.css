@@ -106,7 +106,7 @@ input[type=checkbox] {
   transform: scale(2.5);
 }
 /*Tablets*/
-@media only screen and (min-device-width: 885px) {
+@media only screen and (min-device-width: 767px) {
   h1{
     font-size: 4.236em;
   }
@@ -116,19 +116,21 @@ input[type=checkbox] {
     font-size: 2.618em;
   }
   #formIntro  {
-    font-size: 1.618em;
+    font-size: 1em;
     line-height: 1.2em;
   }
   .labelBox{
-    padding: 2% ;
+    max-width: 50%;
+    padding-top: 2% ;
     order: 1;
     line-height: 1.2em;
-    font-size: 1.618em;
+    font-size: 1em;
   }
   .inputBox{
     order: 2;
     line-height: 1.2em;
-    font-size: 1.618em;
+    font-size: 1em;
+    padding-left: 20px;
   }
   .flexContain {
     display: flex;
