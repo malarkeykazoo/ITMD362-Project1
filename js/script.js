@@ -9,6 +9,7 @@ function init(){
   document.getElementById("typeSelection").addEventListener("change", showBus); 
   document.getElementById("phoneContact").addEventListener("click", showPhone); 
   document.getElementById("specialReq").addEventListener("click", showSpec);
+  document.getElementById("submit").addEventListener("click", showThanks);
   //document.getElementById("acceptTC").addEventListener("click", showSubmit);
   function showPhone(){
     var phoneCheck = document.getElementById("phoneContact");
@@ -41,6 +42,19 @@ function init(){
       specIn.style.display = "none";
     }
   }
+  function showThanks(){
+    var formDisp = document.getElementById("signupForm");
+    var thanksDisp = document.getElementById("thanksPage");
+    var subCheck = document.getElementById("acceptTC");
+    if (subCheck.checked == true){  
+      thanksDisp.style.display = "block";
+      formDisp.style.display = "none";
+    }
+    else {
+      alert("You must agree to be contacted or we won't be able to contact you."); 
+    }
+  }
+}
   //function showSubmit(){
    //var subCheck = document.getElementById("acceptTC");
     //var subIn = document.getElementById("submitContain")
@@ -50,4 +64,3 @@ function init(){
       //subIn.style.display = "none";
     //}
   //}
-}
