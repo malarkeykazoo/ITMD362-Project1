@@ -70,6 +70,8 @@ function init(){
       alert("You must agree to be contacted or we won't be able to contact you."); 
     }
   }
+
+  //Clears the form and show it again (hiding the thank you) for multiple submissions.
   function newSub(){
     var formDisp = document.getElementById("signupForm");
     var thanksDisp = document.getElementById("thanksPage");
