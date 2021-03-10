@@ -101,8 +101,19 @@ textarea {
 #submitContain  {
   padding-top: 10px;
 }
+#newSubmitContain  {
+  padding-top: 10px;
+}
 
 #submitContain > input  {
+  padding: 5px;
+  border-radius: 25px;
+  color:#718ea4;
+  font-weight: bold;
+  background-color: #042037;;
+}
+
+#newSubmitContain > button  {
   padding: 5px;
   border-radius: 25px;
   color:#718ea4;
@@ -180,6 +191,11 @@ input[type=checkbox] {
     line-height: 1.2em;
     font-size: 1.618em;
   }
+  #newSubmitContain > button  {
+    padding: 10px;
+    line-height: 1.2em;
+    font-size: 1.618em;
+  }
 }
 
 @media only screen and (min-device-width: 950px) {
@@ -204,6 +220,11 @@ input[type=checkbox] {
   }
 
   #submitContain {
+    padding-top: 15px;
+    line-height: 1.2em;
+    font-size: 1.618em;
+  }
+  #newSubmitContain {
     padding-top: 15px;
     line-height: 1.2em;
     font-size: 1.618em;
