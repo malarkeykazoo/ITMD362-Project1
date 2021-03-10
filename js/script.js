@@ -5,11 +5,14 @@ jQuery(function($) {
 });
 
 function init(){
+  //Add listeners for different events
   window.addEventListener('load', init);
   document.getElementById("typeSelection").addEventListener("change", showBus); 
   document.getElementById("phoneContact").addEventListener("click", showPhone); 
   document.getElementById("specialReq").addEventListener("click", showSpec);
+  document.getElementById("newSubmit").addEventListener("click", newSub);
   document.getElementById("signupForm").addEventListener("submit", showThanks);
+  //Shows the phone number entry and sets it required if user requests a call back, hides it otherwise
   function showPhone(){
     var phoneCheck = document.getElementById("phoneContact");
     var phoneIn = document.getElementById("phoneSection")
@@ -18,8 +21,11 @@ function init(){
       document.getElementById("phoneNum").required = true;
     } else {
       phoneIn.style.display = "none";
+      document.getElementById("phoneNum").required = false;
     }
   }
+
+   //Shows the business name entry and sets it required if user is filling out for a business, hides it otherwise
   function showBus(){
     var busCheck = document.getElementById("contactType").value;
     var busIn = document.getElementById("businessName")
@@ -29,11 +35,15 @@ function init(){
     } 
     if (busCheck == "personal") {
       busIn.style.display = "none";
+      document.getElementById("cName").required = false;
     }
     if (busCheck == " ") {
       busIn.style.display = "none";
+      document.getElementById("cName").required = false;
     }
   }
+
+  //Shows special request comment box if use is making a request, hides it if they just want the alerts
   function showSpec(){
     var specCheck = document.getElementById("specialReq");
     var specIn = document.getElementById("requestSection")
@@ -42,8 +52,11 @@ function init(){
       document.getElementById("details").required = true;
     } else {
       specIn.style.display = "none";
+      document.getElementById("details").required = false;
     }
   }
+
+  //Hides the form and shows the thank you after user submits. Also does sanity check on Terms acceptance.
   function showThanks(){
     event.preventDefault();
     var formDisp = document.getElementById("signupForm");
@@ -56,5 +69,12 @@ function init(){
     else {
       alert("You must agree to be contacted or we won't be able to contact you."); 
     }
+  }
+  function newSub(){
+    var formDisp = document.getElementById("signupForm");
+    var thanksDisp = document.getElementById("thanksPage");
+    document.getElementById("signupForm").reset();
+    thanksDisp.style.display = "none";
+    formDisp.style.display = "block";
   }
 }
