@@ -25,6 +25,7 @@ h2{
   font-weight: 800;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.618em;
+  line-height: 1.2em;
   color:#161f3a;
 }
 
@@ -70,6 +71,11 @@ body{
 }
 #thanksPage {
   display: none;
+  padding: 2%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  color:#161f3a;
+  line-height: 2em;
 }
 
 select  {
@@ -142,6 +148,8 @@ input[type=checkbox] {
   transform: scale(2.5);
 }
 
+
+
 /*Tablets*/
 @media only screen and (min-device-width: 767px) {
   h1{
@@ -197,7 +205,6 @@ input[type=checkbox] {
   #typeSelection  {
     order: 2;
   }
-
 
   #requestSection > .labelBox {
     margin: 0 auto;
