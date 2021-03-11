@@ -62,9 +62,11 @@ function init(){
     var formDisp = document.getElementById("signupForm");
     var thanksDisp = document.getElementById("thanksPage");
     var subCheck = document.getElementById("acceptTC");
+    var headDisp = document.getElementById("formIntro")
     if (subCheck.checked == true){  
       thanksDisp.style.display = "block";
       formDisp.style.display = "none";
+      headDisp.style.display = "none";
     }
     else {
       alert("You must agree to be contacted or we won't be able to contact you."); 
@@ -75,8 +77,10 @@ function init(){
   function newSub(){
     var formDisp = document.getElementById("signupForm");
     var thanksDisp = document.getElementById("thanksPage");
+    var headDisp = document.getElementById("formIntro")
     document.getElementById("signupForm").reset();
     thanksDisp.style.display = "none";
     formDisp.style.display = "block";
+    headDisp.style.display = "block";
   }
 }
