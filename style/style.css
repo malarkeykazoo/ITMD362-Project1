@@ -16,7 +16,7 @@ h1{
   font-weight: 800;
   font-family: 'Open Sans', sans-serif;
   font-size: 2.618em;
-  color:#042037;
+  color:#1E364A;
 }
 
 h2{
@@ -24,14 +24,12 @@ h2{
   font-weight: 800;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.618em;
-  color:#0f4776;
+  color:#324859;
 }
 
 body{
   margin: 0 auto;
-  width:95vw;
-  height:90vh;
-  background-color: #718ea4;
+  background-color: #8A97A2;
 }
 #scary  {
   padding: 20px 0;
@@ -74,8 +72,8 @@ body{
 
 select  {
   padding: 5px;
-  color: #718ea4;
-  background-color: #042037;
+  color: #8A97A2;
+  background-color: #1E364A;
   border-radius: 25px;
   text-align: center;
 }
@@ -85,15 +83,15 @@ select  {
 }
 
 .labelBox > label {
-  color: #042037;
+  color:#1E344A;
   line-height: 1.618em;
   font-weight: bold;
 }
 
 .inputBox > input {
   padding: 5px;
-  color: #718ea4;
-  background-color: #042037;
+  color: #8A97A2;
+  background-color: #1E364A;
   border-radius: 25px;
   text-align: center;
   font-weight: bold;
@@ -101,9 +99,10 @@ select  {
 
 textarea {
   padding: 10px;
-  color: #718ea4;
-  background-color: #042037;
+  color: #8A97A2;
+  background-color: #1E364A;
   border-radius: 15px;
+  width: 70%;
 }
 
 #submitContain  {
@@ -116,17 +115,17 @@ textarea {
 #submitContain > input  {
   padding: 5px;
   border-radius: 25px;
-  color:#718ea4;
+  color:#9999B0;
   font-weight: bold;
-  background-color: #042037;;
+  background-color: #1E364A;
 }
 
 #newSubmitContain > button  {
   padding: 5px;
   border-radius: 25px;
-  color:#718ea4;
+  color:#9999B0;
   font-weight: bold;
-  background-color: #042037;;
+  background-color: #1E364A;
 }
 
 .labelBox{
@@ -159,7 +158,6 @@ input[type=checkbox] {
 
   .labelBox{
     max-width: 50%;
-    padding-top: 2% ;
     order: 1;
     line-height: 1.2em;
     font-size: 1em;
@@ -177,6 +175,7 @@ input[type=checkbox] {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: baseline;
+    padding: 2px 0;
   }
 
   .businessName {
@@ -190,6 +189,10 @@ input[type=checkbox] {
     order: 2;
   }
 
+
+  #requestSection > .labelBox {
+    margin: 0 auto;
+  }
   input[type=checkbox] {
       transform: scale(2);
   }
@@ -207,34 +210,45 @@ input[type=checkbox] {
 }
 
 @media only screen and (min-device-width: 950px) {
+  html {
+    padding-top: 0;
+  }
+  h2  {
+    padding-top: 0;
+  }
+
   #formIntro  {
     font-size: 1.618em;
     line-height: 1.2em;
   }
 
+  #scary  {
+    padding: 10px 0;
+  }
+
   .labelBox{
     max-width: 70%;
-    padding-top: 2% ;
     order: 1;
     line-height: 1.2em;
-    font-size: 1.618em;
+    font-size: 1.2em;
+    padding: 0;
   }
 
   .inputBox{
     order: 2;
     line-height: 1.2em;
-    font-size: 1.618em;
+    font-size: 1.2em;
     padding-left: 20px;
   }
 
   #submitContain {
     padding-top: 15px;
     line-height: 1.2em;
-    font-size: 1.618em;
+    font-size: 1.2em;
   }
   #newSubmitContain {
     padding-top: 15px;
     line-height: 1.2em;
-    font-size: 1.618em;
+    font-size: 1.2em;
   }
 }
