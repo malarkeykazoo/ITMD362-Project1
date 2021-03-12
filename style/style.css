@@ -1,4 +1,4 @@
-/* Color Palette from Palletton: https://paletton.com/#uid=53N0q0k5Lh8qOPW77Rujw79Ndbq
+/* Color Palette from material.io: https://material.io/resources/color/#!/?view.left=0&view.right=1&secondary.color=153a49&primary.color=001a42
 /* Golden Section Modular Scale: https://www.modularscale.com/?1&em&1.618 */
 * {
   box-sizing: border-box;
@@ -16,8 +16,8 @@ h1{
   font-weight: 800;
   font-family: 'Open Sans', sans-serif;
   font-size: 2.618em;
-  color:#121726;
-  
+  color:#FFFFFF;
+  background-color: #00001d;
 }
 
 h2{
@@ -26,13 +26,14 @@ h2{
   font-family: 'Open Sans', sans-serif;
   font-size: 1.618em;
   line-height: 1.2em;
-  color:#161f3a;
+  color:#FFFFFF;
+  background-color: #33406d;
 }
 
 body{
   width: 95%;
   margin: 0 auto;
-  background-color: #B9c5e6;
+  
 }
 #scary  {
   padding: 20px 0;
@@ -50,11 +51,13 @@ body{
   width:80vw;
   text-align: center;
   margin: 0 auto;
+  background-color:#001a42;
+  padding-bottom: 2%;
 }
 
 #formIntro  {
   margin: 1% 0;
-  color: #121726;
+  color: #FFFFFF;
   max-width: 85vw;
 }
 
@@ -74,14 +77,14 @@ body{
   padding: 2%;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-  color:#161f3a;
+  color: #FFFFFF;
   line-height: 2em;
 }
 
 select  {
   padding: 5px;
-  color: #B2D8E2;
-  background-color: #161f3a;
+  color: #FFFFFF;
+  background-color: #00001d;
   border-radius: 25px;
   text-align: center;
 }
@@ -91,15 +94,14 @@ select  {
 }
 
 .labelBox > label {
-  color:#161f3a;
+  color: #FFFFFF;
   line-height: 1.618em;
-  font-weight: bold;
 }
 
 .inputBox > input {
   padding: 5px;
-  color: #B2D8E2;
-  background-color: #161f3a;
+  color: #FFFFFF;
+  background-color: #00001d;
   border-radius: 25px;
   text-align: center;
   font-weight: bold;
@@ -107,8 +109,8 @@ select  {
 
 textarea {
   padding: 10px;
-  color: #B2D8E2;
-  background-color: #161f3a;
+  color: #FFFFFF;
+  background-color: #00001d;
   border-radius: 15px;
   width: 70%;
 }
@@ -123,17 +125,17 @@ textarea {
 #submitContain > input  {
   padding: 5px;
   border-radius: 25px;
-  color:#B9C5E6;
+  color: #FFFFFF;
   font-weight: bold;
-  background-color: #0f1f23;
+  background-color: #001521;
 }
 
 #newSubmitContain > button  {
   padding: 5px;
   border-radius: 25px;
-  color:#B9C5E6;
+  color: #FFFFFF;
   font-weight: bold;
-  background-color: #0f1f23;
+  background-color: #001521;
 }
 
 .labelBox{
