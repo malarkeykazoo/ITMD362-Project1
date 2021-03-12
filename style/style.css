@@ -142,6 +142,9 @@ textarea {
   padding-top: 1.5%;
 }
 
+#thanksPage > h2  {
+  background-color:#001a42;
+}
 .inputBox {
   padding-top: 1%;
 }
