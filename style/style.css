@@ -157,7 +157,7 @@ input[type=checkbox] {
 
 
 /*Tablets*/
-@media only screen and (min-device-width: 767px) {
+@media only screen and (min-width: 767px) {
   h1{
     font-size: 4.236em;
   }
@@ -231,7 +231,7 @@ input[type=checkbox] {
   }
 }
 
-@media only screen and (min-device-width: 950px) {
+@media only screen and (min-width: 950px) {
   html {
     padding-top: 0;
   }
