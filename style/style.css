@@ -36,19 +36,19 @@ body{
   margin: 0 auto;
   
 }
-#scary  {
+#scary{
   padding: 20px 0;
   font-weight: bold;
   font-size: 1.2em;
 }
-#scary2  {
+#scary2{
   padding-bottom: 10px;
   font-weight: bold;
   font-size: 1.2em;
   font-style: italic;
 }
 
-#bodyContain  {
+#bodyContain{
   width:80vw;
   text-align: center;
   margin: 0 auto;
@@ -56,24 +56,25 @@ body{
   padding-bottom: 2%;
 }
 
-#formIntro  {
+#formIntro{
   margin: 1% 0;
   color: #FFFFFF;
   max-width: 85vw;
 }
 
-.hasjs #businessName {
+.hasjs #businessName{
   display:none;
 }
 
-.hasjs #phoneSection {
+.hasjs #phoneSection{
   display:none;
 }
 
-.hasjs #requestSection {
+.hasjs #requestSection{
   display:none;
 }
-#thanksPage {
+
+#thanksPage{
   display: none;
   padding: 2%;
   font-family: 'Open Sans', sans-serif;
@@ -82,7 +83,7 @@ body{
   line-height: 2em;
 }
 
-select  {
+select{
   padding: 5px;
   color: #FFFFFF;
   background-color: #00001d;
@@ -90,16 +91,16 @@ select  {
   text-align-last: center;
 }
 
-#typeSelection > .labelBox  {
+#typeSelection > .labelBox{
   padding-bottom: 1%;
 }
 
-.labelBox > label {
+.labelBox > label{
   color: #FFFFFF;
   line-height: 1.618em;
 }
 
-.inputBox > input {
+.inputBox > input{
   padding: 5px;
   color: #FFFFFF;
   background-color: #00001d;
@@ -108,7 +109,7 @@ select  {
   font-weight: bold;
 }
 
-textarea {
+textarea{
   padding: 10px;
   color: #FFFFFF;
   background-color: #00001d;
@@ -116,14 +117,14 @@ textarea {
   width: 70%;
 }
 
-#submitContain  {
+#submitContain{
   padding-top: 10px;
 }
-#newSubmitContain  {
+#newSubmitContain{
   padding-top: 10px;
 }
 
-#submitContain > input  {
+#submitContain > input{
   padding: 5px;
   border-radius: 25px;
   color: #FFFFFF;
@@ -131,7 +132,7 @@ textarea {
   background-color: #001521;
 }
 
-#newSubmitContain > button  {
+#newSubmitContain > button{
   padding: 5px;
   border-radius: 25px;
   color: #FFFFFF;
@@ -143,21 +144,24 @@ textarea {
   padding-top: 1.5%;
 }
 
-#thanksPage > h2  {
+#thanksPage > h2{
   background-color:#001a42;
 }
-.inputBox {
+
+#thanksPage > h3{
+  background-color:#001a42;
+  font-size: 1.618em;
+}
+.inputBox{
   padding-top: 1%;
 }
 
-input[type=checkbox] {
+input[type=checkbox]{
   transform: scale(2.5);
 }
 
-
-
 /*Tablets*/
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 767px){
   h1{
     font-size: 4.236em;
   }
@@ -167,12 +171,12 @@ input[type=checkbox] {
     font-size: 2.618em;
   }
 
-  #promo  {
+  #promo{
     line-height: 1.2em;
     font-size: 1em;
   }
 
-  #formIntro  {
+  #formIntro{
     font-size: 1em;
     line-height: 1.2em;
   }
@@ -193,7 +197,7 @@ input[type=checkbox] {
     align-self: center;
   }
 
-  .flexContain {
+  .flexContain{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -201,54 +205,58 @@ input[type=checkbox] {
     padding: .5% 0;
   }
 
-  .businessName {
+  .businessName{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
   }
 
-  #typeSelection  {
+  #typeSelection{
     order: 2;
   }
 
-  #requestSection > .labelBox {
+  #requestSection > .labelBox{
     margin: 0 auto;
   }
-  input[type=checkbox] {
+
+  input[type=checkbox]{
       transform: scale(2);
   }
 
-  #submitContain > input  {
+  #submitContain > input{
     padding: 10px;
     line-height: 1.2em;
     font-size: 1.618em;
   }
-  #newSubmitContain > button  {
+
+  #newSubmitContain > button{
     padding: 10px;
     line-height: 1.2em;
     font-size: 1.618em;
   }
 }
 
-@media only screen and (min-width: 950px) {
-  html {
+@media only screen and (min-width: 950px){
+  html{
     padding-top: 0;
   }
-  h2  {
+
+  h2{
     padding: 1%;
   }
-  #promo  {
+
+  #promo{
     line-height: 1.2em;
     font-size: 1em;
   }
 
-  #formIntro  {
+  #formIntro{
     font-size: 1.618em;
     line-height: 1.2em;
   }
 
-  #scary  {
+  #scary{
     padding: 10px 0;
   }
 
@@ -267,12 +275,13 @@ input[type=checkbox] {
     padding-left: 20px;
   }
 
-  #submitContain {
+  #submitContain{
     padding-top: 15px;
     line-height: 1.2em;
     font-size: 1.2em;
   }
-  #newSubmitContain {
+
+  #newSubmitContain{
     padding-top: 15px;
     line-height: 1.2em;
     font-size: 1.2em;
