@@ -24,9 +24,9 @@ h1{
 
 h2{
   padding: 2% 1%;
-  font-weight: 800;
+  font-weight: normal;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.618em;
+  font-size: 150%;
   line-height: 1.2em;
   color:#000000;
   background-color: #00ffa2;
@@ -233,7 +233,7 @@ input[type=checkbox]{
 
   h2{
     line-height: 1.2em;
-    font-size: 2.618em;
+    font-size: 200%;
   }
 
   #promo{
@@ -292,13 +292,13 @@ input[type=checkbox]{
   #submitContain > input{
     padding: 10px;
     line-height: 1.2em;
-    font-size: 1.618em;
+    font-size: 100%;
   }
 
   #newSubmitContain > button{
     padding: 10px;
     line-height: 1.2em;
-    font-size: 1.618em;
+    font-size: 100%;
   }
 }
 
