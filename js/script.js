@@ -1,12 +1,11 @@
-// jQuery 3.x-style ready event and locally scoped $
-jQuery(function($) {
-  $('html').removeClass('nojs');
-  $('html').addClass('hasjs');
-});
-
 function init(){
   //Add listeners for different events
   window.addEventListener('load', init);
+  //JS Detection 
+  var html = document.getElementsByTagName("html")[0];
+    if(html.className == "nojs") {
+      html.className = html.className.replace("nojs", "hasjs");
+    }
   document.getElementById("typeSelection").addEventListener("change", showBus); 
   document.getElementById("phoneContact").addEventListener("click", showPhone); 
   document.getElementById("specialReq").addEventListener("click", showSpec);
